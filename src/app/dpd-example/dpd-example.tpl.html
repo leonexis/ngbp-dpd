@@ -1,0 +1,25 @@
+<div class="row">
+  <h1 class="page-header">
+    Deployd Example Application
+    <small>Because we all love TODO examples.</small>
+  </h1>
+  <div class="container" ng-controller="TodoDpdCtrl" ng-cloak>
+    <p ng-hide="todos.length || !loaded">You don't have any todos! Add one now:</p>
+    <ul class="unstyled">
+      <li ng-repeat="todo in todos">
+        <label class="checkbox">
+          <input type="checkbox" ng-model="todo.completed" ng-change="changeCompleted(todo)" />
+          {{todo.title}}
+        </label>
+      </li>
+    </ul>
+    <form class="form-inline" name="form" role="form" novalidate>
+      <input type="text" ng-model="newTodoTitle" class="form-control" required />
+      <button ng-disabled="form.$invalid" class="btn btn-success" ng-click="addTodo(newTodoTitle)">Add</button>
+    </form>
+    <p>
+      <a href ng-click="removeCompletedItems()">Remove completed items</a>
+    </p>
+  </div>
+</div>
+

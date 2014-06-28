@@ -3,7 +3,7 @@
 
 An opinionated kickstarter for [AngularJS](http://angularjs.org) projects 
 extended and modified to work with deployd's API platform. This is a fork of 
-the original [ngBoilerplate](http://github.com/ngbp/ngbp) with minor 
+the original [ngBoilerplate](http://github.com/ngbp/ngbp) 0.3.2 with minor 
 modifications to allow it to co-exist with deployd 0.7.0. The deployd 
 dependency itself is for a modified version that ignores grunt and other 
 dependencies that have malformed or no `main` key in their respective 
@@ -24,7 +24,12 @@ $ bower install
 $ grunt watch
 ```
 
-Finally, open `file:///path/to/ng-boilerplate/build/index.html` in your browser.
+Start deployd and dashboard in a separate console:
+```sh
+$ dpd -d
+```
+
+Finally, open `http://localhost:2403` in your browser.
 
 Happy hacking!
 

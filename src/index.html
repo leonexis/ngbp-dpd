@@ -31,6 +31,11 @@
     <script type="text/javascript" src="https://apis.google.com/js/plusone.js">
       { "parsetags": "explicit" }
     </script>
+
+    <!-- have to load dpd.js separate since it is dynamically generated from 
+         configured API resources -->
+    <script type="text/javascript" src="dpd.js"></script>
+
   </head>
   <body>
     <div class="container">
@@ -44,9 +49,9 @@
             <span class="icon-bar"></span>
           </button>
           <div class="navbar-brand">
-            ngbp
+            ngbp-dpd
             <small>
-              <a href="http://github.com/ngbp/ngbp/blob/v<%= version %>-release/CHANGELOG.md">
+              <a href="http://github.com/leonexis/ngbp-dpd/blob/v<%= version %>-release/CHANGELOG.md">
                 v<%= version %>
               </a>
             </small>
@@ -64,6 +69,12 @@
               <a href ui-sref="about">
                 <i class="fa fa-info-circle"></i>
                 What is it?
+              </a>
+            </li>
+            <li ui-sref-active="active">
+              <a href ui-sref="todo">
+                <i class="fa fa-cogs"></i>
+                Deployd Example App
               </a>
             </li>
             <li>
@@ -95,24 +106,32 @@
       <div class="container">
         <div class="footer-inner">
           <ul class="social">
-            <li><a target="_blank" href="http://gplus.to/joshdmiller"><i class="fa fa-google-plus-sign"></i></a></li>
-            <li><a target="_blank" href="http://twitter.com/joshdmiller"><i class="fa fa-twitter-sign"></i></a></li>
-            <li><a target="_blank" href="http://linkedin.com/in/joshdmiller"><i class="fa fa-linkedin-sign"></i></a></li>
-            <li><a target="_blank" href="http://github.com/ngbp/ngbp"><i class="fa fa-github-sign"></i></a></li>
+            <li><a target="_blank" href="http://gplus.to/joshdmiller"><i class="fa fa-google-plus"></i></a></li>
+            <li><a target="_blank" href="http://twitter.com/joshdmiller"><i class="fa fa-twitter"></i></a></li>
+            <li><a target="_blank" href="http://linkedin.com/in/joshdmiller"><i class="fa fa-linkedin"></i></a></li>
+            <li><a target="_blank" href="http://github.com/ngbp/ngbp"><i class="fa fa-github"></i></a></li>
           </ul>
           
 
           <p>
-            (c) 2013 <a href="http://www.joshdavidmiller.com">Josh David Miller</a>. 
-            <a href="http://github.com/ngbp/ngbp/fork_select">Fork this</a>
+            (c) 2013 <a href="http://www.joshdavidmiller.com">Josh David Miller</a>.
+            Deployd ngbp extensions (c) 2014 <a href="http://leonexis.com">S Leo Tindle</a>
+            (
+            <a target="_blank" href="http://gplus.to/leonexis"><i class="fa fa-google-plus"></i></a>
+            <a target="_blank" href="http://twitter.com/leonexis"><i class="fa fa-twitter"></i></a>
+            <a target="_blank" href="http://linkedin.com/in/leonexis"><i class="fa fa-linkedin"></i></a>
+            <a target="_blank" href="http://github.com/leonexis"><i class="fa fa-github"></i></a>
+            ).
+            <a href="http://github.com/leonexis/ngbp-dpd/fork_select">Fork this</a>
             to kickstart your next project.
             <br />
-            ngbp is based on
+            ngbp-dpd is based on
             <a href="http://www.angularjs.org">AngularJS</a>,
             <a href="http://getbootstrap.com">Bootstrap</a>, 
             <a href="http://angular-ui.github.com/bootstrap">UI Bootstrap</a>,
+            <a href="http://fortawesome.github.com/Font-Awesome">Font Awesome</a>
             and 
-            <a href="http://fortawesome.github.com/Font-Awesome">Font Awesome</a>.        
+            <a href="http://deployd.com">Deployd</a>.
           </p>
         </div>
       </div>
