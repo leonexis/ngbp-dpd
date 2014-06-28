@@ -1,18 +1,20 @@
 {
   "author": "Josh David Miller",
-  "name": "ngbp",
+  "name": "ngbp-dpd",
   "version": "0.3.2",
-  "homepage": "https://github.com/ngbp/ngbp",
+  "homepage": "https://github.com/leonexis/ngbp-dpd",
   "licenses": {
     "type": "MIT",
-    "url": "https://raw.github.com/ngbp/ngbp/master/LICENSE"
+    "url": "https://raw.github.com/leonexis/ngbp-dpd/master/LICENSE"
   },
-  "bugs": "https://github.com/ngbp/ngbp/issues",
+  "bugs": "https://github.com/leonexis/ngbp-dpd/issues",
   "repository": {
     "type": "git",
-    "url": "git@github.com:ngbp/ngbp.git"
+    "url": "git@github.com:leonexis/ngbp-dpd.git"
   },
-  "dependencies": {},
+  "dependencies": {
+    "deployd": "leonexis/deployd"
+  },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-less": "~0.11.0",
