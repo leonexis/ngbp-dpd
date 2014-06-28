@@ -4,3 +4,7 @@ build/
 bin/
 node_modules/
 vendor/
+.dpd/
+data/
+public/
+public-production/
