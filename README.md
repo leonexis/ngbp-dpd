@@ -1,6 +1,13 @@
-# [ngBoilerplate](http://joshdmiller.github.com/ng-boilerplate) [![Build Status](https://api.travis-ci.org/ngbp/ngbp.png?branch=v0.3.2-release)](https://travis-ci.org/ngbp/ngbp)
+# [ngBoilerplate](http://joshdmiller.github.com/ng-boilerplate) for 
+[deployd](http://deployd.com) Projects
 
-An opinionated kickstarter for [AngularJS](http://angularjs.org) projects.
+An opinionated kickstarter for [AngularJS](http://angularjs.org) projects 
+extended and modified to work with deployd's API platform. This is a fork of 
+the original [ngBoilerplate](http://github.com/ngbp/ngbp) with minor 
+modifications to allow it to co-exist with deployd 0.7.0. The deployd 
+dependency itself is for a modified version that ignores grunt and other 
+dependencies that have malformed or no `main` key in their respective 
+`package.json` files.
 
 ***
 
@@ -9,9 +16,9 @@ An opinionated kickstarter for [AngularJS](http://angularjs.org) projects.
 Install Node.js and then:
 
 ```sh
-$ git clone git://github.com/joshdmiller/ng-boilerplate
-$ cd ng-boilerplate
-$ sudo npm -g install grunt-cli karma bower
+$ git clone git://github.com/leonexis/ngbp-dpd
+$ cd ngbp-dpd
+$ sudo npm -g install grunt-cli karma bower leonexis/deployd
 $ npm install
 $ bower install
 $ grunt watch
